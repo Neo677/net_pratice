@@ -1,0 +1,50 @@
+							Net_Practice :
+
+Ce projet consiste à résoudre des problèmes liés à la mise en place d’un petit réseau
+fonctionnel.
+
+Vous aurez 10 niveaux, soit 10 exercices, à réussir et à rendre dans votre dépot Git.
+
+First lets document this projet : 
+
+Ques ce que un reseaux ?
+
+	Les réseaux ont donc pour but de permettre la transmission d’informations. À l’époque des tout premiers
+	ordinateurs, le seul moyen de transmission était la disquette, qui était transportée d’un ordinateur à un
+	autre : assez peu pratique... :/
+	
+	Il existe différents types de réseaux informatiques :
+
+		Les LAN (Local Area Network)
+
+	Les LAN sont des réseaux à échelle locale, tels que les réseaux domestiques de votre domicile, ou les réseaux
+	à l’échelle d’une entreprise.
+
+		Les MAN (Metropolitan Area Network)
+
+	Les MAN sont déployés à l’échelle d’une ville. Il peut s’agir, par exemple, de réseaux universitaires qui
+	connectent différentes facultés d’une même ville. Ils sont eux-mêmes constitués de LAN qui, ensemble, forment
+	un MAN.
+
+		Les WAN (Wide Area Network)
+
+	Les WAN sont des réseaux à échelle mondiale, dont le plus connu est Internet. Ce dernier est lui-même composé
+	de MAN et de LAN.
+	
+
+C'est quoi une IP ?
+	Une IP ou Internal protocol est une adresse unique qui identifie un appareil sur un reseaux
+	(c'est un peu comme une adresse postale sur un maison, mais pour ton appareil dans un reseau)
+	Ex IP: 
+		EN ipv4: 192.168.1.12
+
+C'est quoi un TCP ?
+	 
+
+
+C'est quoi un mask reseau ?
+
+Comment fonctionne un reseaux physiquement ?
+
+	
+
