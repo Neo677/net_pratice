@@ -3,6 +3,8 @@
 Ce projet consiste à résoudre des problèmes liés à la mise en place d’un petit réseau
 fonctionnel.
 
+https://www.codequoi.com/architecture-du-reseau-internet/
+
 Vous aurez 10 niveaux, soit 10 exercices, à réussir et à rendre dans votre dépot Git.
 
 First lets document this projet : 
@@ -25,6 +27,8 @@ Ques ce que un reseaux ?
 	Les MAN sont déployés à l’échelle d’une ville. Il peut s’agir, par exemple, de réseaux universitaires qui
 	connectent différentes facultés d’une même ville. Ils sont eux-mêmes constitués de LAN qui, ensemble, forment
 	un MAN.
+8
+09
 
 		Les WAN (Wide Area Network)
 
@@ -36,15 +40,51 @@ C'est quoi une IP ?
 	Une IP ou Internal protocol est une adresse unique qui identifie un appareil sur un reseaux
 	(c'est un peu comme une adresse postale sur un maison, mais pour ton appareil dans un reseau)
 	Ex IP: 
-		EN ipv4: 192.168.1.12
+		Exemple: (type ipv4) 192.168.1.12
 
 C'est quoi un TCP ?
-	 
+	 TCP veut dire Transmission Control Protocol.
+	 C’est un protocole de communication, utilisé pour envoyer et recevoir des données sur un réseau 
+	 (comme Internet).
+	🧳 Imagine TCP comme un livreur très sérieux 📦
+		Quand tu veux envoyer des données (ex. une page web, un message, un fichier), TCP :
+
+		Coupe les données en petits morceaux appelés "segments".
+
+		Numérote chaque morceau.
+
+		Vérifie que chaque morceau est bien arrivé, dans le bon ordre.
+
+		Renvoie ce qui a été perdu si besoin.
+
+	🎯 Résultat : tout arrive complet et dans l’ordre.
 
 
 C'est quoi un mask reseau ?
-
-Comment fonctionne un reseaux physiquement ?
+	Un masque reseau, (SUBNET MASK) sert a definir la partie reseau et la partie machine d'une adresse ip.
+	Il fonctionne main dans la main avec l’adresse IP, pour dire :
+		"OK, jusqu’ici c’est le réseau, et après c’est la partie qui change pour chaque appareil." 
+	💡 Exemple classique :
+		Adresse IP : 192.168.1.12
+		Masque  réseau : 255.255.255.0
+	Cela signifie que :
+		192.168.1 → c’est le réseau
+		.12 → c’est l’identifiant de la machine dans ce réseau
 
 	
+
+ 
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
 
