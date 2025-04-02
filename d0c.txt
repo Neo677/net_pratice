@@ -56,7 +56,7 @@ C'est quoi un mask reseau ?
 		•	192.168.1 → c’est le réseau
 		•	.12 → c’est l’identifiant de la machine dans ce réseau
 
-Le CIDR permet de créer des superréseaux avec plus de flexibilité
+
 
 
 Level 3 :
@@ -101,6 +101,9 @@ Level 5:
 
 	route match but no interface for gateway 192.168.0.254
 	→ en clair : “Je veux bien envoyer vers là, mais… j’ai aucune interface pour atteindre cette passerelle.”
+
+
+
 
 
 
