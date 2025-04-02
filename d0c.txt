@@ -39,12 +39,68 @@ C'est quoi une IP ?
 		EN ipv4: 192.168.1.12
 
 C'est quoi un TCP ?
-	 
-
+	TCP veut dire Transmission Control Protocol.
+	C’est un protocole de communication, utilisé pour envoyer et recevoir des données sur un réseau (comme Internet).
 
 C'est quoi un mask reseau ?
+	Un masque réseau (ou subnet mask en anglais) sert à définir la partie réseau et la partie machine d’une adresse IP.
 
-Comment fonctionne un reseaux physiquement ?
+	Il fonctionne main dans la main avec l’adresse IP, pour dire :
 
+	“OK, jusqu’ici c’est le réseau, et après c’est la partie qui change pour chaque appareil.”
+
+	💡 Exemple classique :
+		•	Adresse IP : 192.168.1.12
+		•	Masque réseau : 255.255.255.0
+	Cela signifie que :
+		•	192.168.1 → c’est le réseau
+		•	.12 → c’est l’identifiant de la machine dans ce réseau
+
+Le CIDR permet de créer des superréseaux avec plus de flexibilité
+
+
+Level 3 :
+	Objectifs :
+		1.	A doit parler à B
+		2.	A doit parler à R (My_Gate)
+		3.	B doit parler à R (My_Gate)
+
+	      	    [A]          [B]
+   		     |            |
+  	  	    ----SWITCH (S)----
+     			       |
+    			 [R: My_Gate]
+  		   (3 interfaces : R1, R2, R3)
+Level 5:
+	Tu commences à gérer un réseau complet avec deux machines, un routeur, et des routes à configurer manuellement. Là t’apprends 	le vrai b.a.-ba du routage 👨‍💻🌐
+
+	1.	🟢 Machine A → The Mighty Router
+	2.	🔵 Machine B → The Mighty Router
+	3.	🟢 Machine A → 🔵 Machine B
 	
+	[Machine A]───┐        ┌───[Machine B]
+              	      │        │
+            	[Router : The Mighty Router]
+
+	   [Machine A]                           [Machine B]
+          78.19.142.125                         150.64.251.253
+             |                                     |
+             |                                     |
+     	  ------- R1 (Routeur) ----------------------- R2
+       |     78.19.142.126                 150.64.251.254  |
+       |                                                   |
+  	  [ The Mighty Router ] <-- Routeur avec 2 interfaces --+
+
+	Nouvelle fonctionnalité: 
+		Les host routes: 
+			C’est une route par défaut spécifique qu’on te donne pour simuler une passerelle Internet ou une porte de 	sortie vers d’autres réseaux.
+
+	Mais ici, cette route est non fonctionnelle, parce que 192.168.0.254 n’existe sur aucune interface connectée.
+
+	Et tu l’as vu dans les logs :
+
+	route match but no interface for gateway 192.168.0.254
+	→ en clair : “Je veux bien envoyer vers là, mais… j’ai aucune interface pour atteindre cette passerelle.”
+
+
 
